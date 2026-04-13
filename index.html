@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insituto Sonora | Escuela secundaria y preparatoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ============================================================
+       NAVBAR
+       Edit: logo text, nav links
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img class="inson-escudo" src="assets/inson-escudo.png" alt="escudo insituto sonora" />
+
+        Instituto <span>Sonora</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#description">Conócenos</a></li>
+        <li><a href="#section3">Secundaria</a></li>
+        <li><a href="#section4">Bachillerato</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+
+      <button onclick="openSmartRedirect()" class="nav-cta">WhatsApp</button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+       Edit: background image URL (--hero-bg in CSS or inline),
+             headline, subtext, CTA buttons
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Replace the src with your own image -->
+    <div class="hero-image-wrap">
+      <img src="./assets/alumnos-education-day.jpg" alt="Education day visit group picture" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Instituto Sonora</span>
+      <h1 class="hero-headline">
+        Formando <em>Líderes</em><br />para un Futuro Brillante
+      </h1>
+      <p class="hero-sub">
+        Educación secundaria y preparatoria de calidad con valores sólidos,
+        fomentando la creatividad y la innovaciṕn tecnológica en cada etapa.
+      </p>
+      <div class="hero-actions">
+        <a href="#section3" class="btn btn-primary">Contacto</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 — DESCRIPTION
+       Layout: 1 half | 1 quarter | 2 eighths
+       Edit: headings, body text, stat numbers
+  ============================================================ -->
+  <section class="description" id="description">
+    <div class="desc-grid">
+      <!-- HALF — main feature block -->
+      <div class="desc-half desc-block">
+        <img class="inson-logo" src="assets/inson-logo.png" alt="inson-logo" />
+      </div>
+
+      <!-- QUARTER — stat or highlight -->
+      <div class="desc-quarter desc-block desc-block--accent">
+        <h2 class="desc-heading">Bienvenido a la familia Inson.</h2>
+      </div>
+
+      <!-- EIGHTH 1 — quick fact -->
+      <div class="desc-eighth desc-block desc-block--dark">
+        <span class="desc-stat-number">20+</span>
+        <span class="desc-stat-label">Años de experiencia</span>
+        <div class="desc-divider"></div>
+      </div>
+
+      <!-- EIGHTH 2 — quick fact -->
+      <div class="desc-eighth desc-block">
+        <p>
+          Somos una institución comprometida con el desarrollo de estudiantes
+          íntegros y preparados para los retos del mañana. Fomentamos el
+          liderazgo, los valores y la creatividad, impulsando el aprendizaje
+          del inglés, el uso de tecnología y la expresión artística como
+          herramientas esenciales para su formación.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — CARDS (Services / Features)
+       Edit: section title, subtitle, and each card's icon, title, text
+  ============================================================ -->
+  <section class="section3" id="section3">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Educación Secundaria</span>
+        <h2>Fortaleciendo bases <em>Sólidas</em></h2>
+        <p class="section-sub">
+          Un programa integral que desarrolla habilidades académicas, sociales
+          y emocionales.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="card-icon">
+            <!-- Replace with <img> or SVG icon -->
+          </div>
+          <h3 class="card-title">Tecnología &amp; Programación</h3>
+          <ul class="card-text">
+            <li>
+              Clases orientadas al uso práctico de herramientas tecnológicas
+              actuales.
+            </li>
+            <li>
+              Introducción a la programación y pensamiento computacional.
+            </li>
+            <li>
+              Proyectos digitales que fomentan la creatividad y la resolución
+              de problemas.
+            </li>
+          </ul>
+          <a href="#" class="card-link">Conoce más →</a>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card card--featured">
+          <div class="card-icon"></div>
+          <h3 class="card-title">Educación Integral</h3>
+          <ul class="card-text">
+            <li>Desarrollo académico, social y emocional equilibrado.</li>
+            <li>Fomento de valores, trabajo en equipo y liderazgo.</li>
+            <li>
+              Actividades deportivas, artísticas y de formación personal.
+            </li>
+          </ul>
+          <a href="#" class="card-link">Conoce más →</a>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <div class="card-icon"></div>
+          <h3 class="card-title">Inglés &amp; Certificaciones</h3>
+          <ul class="card-text">
+            <li>
+              Fortalecimiento del dominio del inglés mediante un programa
+              especializado para secundaria.
+            </li>
+            <li>
+              Preparación para certificaciones oficiales de reconocimiento
+              internacional.
+            </li>
+            <li>
+              Práctica constante a través de actividades comunicativas y
+              académicas.
+            </li>
+          </ul>
+          <a href="#" class="card-link">Conoce más →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — MAIN CARDS (Portfolio / Showcase)
+       Edit: section header, and each project card's image, tag, title, text
+  ============================================================ -->
+  <section class="section4" id="section4">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Educación Media Superior</span>
+        <h2>Preparando el camino al <em>Éxito</em></h2>
+        <p class="section-sub">
+          Orientación universitaria, liderazgo e innovación para la vida
+          prosfesional.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- MAIN / FEATURED CARD -->
+        <article class="portfolio-card portfolio-card--main">
+          <div class="portfolio-img-wrap">
+            <img id="gen-pic" src="assets/crop-geenreracion-2025.jpg" alt="" />
+          </div>
+          <div class="portfolio-info">
+            <p>
+              A través de una preparación académica sólida y un acompañamiento
+              cercano, brindamos a nuestros estudiantes las herramientas
+              necesarias para desarrollar su potencial y acceder a nuevas
+              oportunidades educativas. Nuestra incorporación al ITSON
+              respalda la calidad y el rigor de nuestros programas.
+            </p>
+          </div>
+        </article>
+
+        <!-- SECONDARY CARD 1 -->
+        <article class="portfolio-card">
+          <div class="portfolio-info">
+            <h2>Fisicomatemático</h2>
+            <h3>Ingeniería, física, matemáticas y ciencias exactas</h3>
+            <p>
+              Este campo impulsa el razonamiento lógico, la experimentación
+              científica y el pensamiento matemático mediante actividades
+              prácticas y proyectos. Con el respaldo académico de la
+              incorporación al ITSON, los estudiantes adquieren competencias
+              fundamentales para comprender y transformar su entorno a través
+              de la ciencia y la tecnología.
+            </p>
+            <br />
+            <h3>¿Qué desarrollan los estudiantes?</h3>
+            <ul>
+              <li>Razonamiento lógico y pensamiento matemático.</li>
+              <li>Habilidades para la resolución de problemas reales.</li>
+              <li>
+                Comprensión científica mediante prácticas y experimentación.
+              </li>
+              <li>Uso de tecnología para análisis y proyectos STEM.</li>
+              <li>
+                Competencias para innovar y tomar decisiones informadas.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SECONDARY CARD 2 -->
+        <article class="portfolio-card">
+          <div class="portfolio-info">
+            <h2>Humanidades</h2>
+            <p></p>
+            <h3>Derecho, comunicación, psicología y ciencias sociales</h3>
+            <p>
+              En este campo formativo, los estudiantes fortalecen sus
+              habilidades de comunicación, pensamiento crítico y comprensión
+              del entorno social. Nuestro enfoque, respaldado por la
+              incorporación al ITSON, impulsa el análisis, la creatividad y la
+              participación activa dentro de una educación integral.
+            </p>
+
+            <br />
+            <h3>¿Qué desarrollan los estudiantes?</h3>
+            <ul>
+              <li>Habilidades de comunicación oral y escrita.</li>
+              <li>Pensamiento crítico y comprensión del entorno social.</li>
+              <li>Trabajo colaborativo y resolución de conflictos.</li>
+              <li>Sensibilidad artística y apreciación cultural.</li>
+              <li>Valores ciudadanos y compromiso con su comunidad.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — CONTACT / ABOUT
+       Edit: address, phone, email, hours, social links, map embed
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <h2><em>Contacto</em></h2>
+      </div>
+
+      <div class="contact-layout">
+        <!-- INFO COLUMN -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" />
+              </svg></div>
+            <div>
+              <h4>Dirección</h4>
+              <!-- Edit your address -->
+              <p>
+                Avenida Juárez #201, Colonia Centro <br> Cananea, Sonora
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              </svg></div>
+            <div>
+              <h4>Teléfono</h4>
+              <!-- Edit your phone -->
+              <p><a href="tel:+526453327202"> (645) 332-7207</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 7l9 6l9 -6" />
+              </svg></div>
+            <div>
+              <h4>Email</h4>
+              <!-- Edit your email -->
+              <p>
+                <a href="direccioninson@gmail.com">direccioninson@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M12 7v5l3 3" />
+              </svg></div>
+            <div>
+              <h4>Horario</h4>
+              <!-- Edit your hours -->
+              <p>Lunes - viernes:7:30 am – 6:00 pm</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <!-- Edit social links -->
+            <a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg> </a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M16.5 7.5v.01" />
+              </svg> </a>
+          </div>
+        </div>
+
+        <!-- FORM COLUMN -->
+        <div class="contact-form-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3420.528285998698!2d-110.29755222349047!3d30.983643474464266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d0e1880687e8f7%3A0xfbb8f31735c86677!2sInstituto%20Sonora!5e0!3m2!1ses!2smx!4v1776045783388!5m2!1ses!2smx"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       Edit: brand name, footer links, copyright
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Instituto <span>Sonora</span></div>
+      <nav class="footer-links">
+        <a href="#hero">Inicio</a>
+        <a href="#description">Conócenos</a>
+        <a href="#section3">Secundaria</a>
+        <a href="#section4">Bachillerato</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <p class="footer-copy">© 2026 Insituto Sonora. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
