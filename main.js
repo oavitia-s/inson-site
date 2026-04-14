@@ -245,8 +245,8 @@
         const isMobile = /iphone|ipad|ipod|android/i.test(navigator.userAgent);
         
         if (isMobile) {
-            window.location.href = `whatsapp://send?phone=${PHONE}&text=${encodeURIComponent('Hello from smart redirect!')}`;
+            window.location.href = `whatsapp://send?phone=${PHONE}&text=${encodeURIComponent('Hola, me gustaría recibir información sobre su escuela, por favor.')}`;
         } else {
-            window.open(`https://web.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent('Hello from smart redirect!')}`, '_blank');
+            window.open(`https://web.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent('Hola, me gustaría recibir información sobre su escuela, por favor.')}`, '_blank');
         }
     }
