@@ -299,6 +299,7 @@ em {
   align-items: center;
   gap: var(--space-lg);
   margin-left: auto;
+  list-style: none;
 }
 .nav-links a {
   color: rgba(255, 255, 255, 0.8);
