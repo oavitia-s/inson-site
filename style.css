@@ -188,8 +188,8 @@ em {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 30px;
-  border-radius: var(--radius-full);
+  padding: 10px;
+  border-radius: var(--radius-md);
   font-weight: var(--fw-semibold);
   font-size: var(--fs-sm);
   letter-spacing: 0.02em;
@@ -443,6 +443,7 @@ em {
 
 .hero-actions {
   display: flex;
+  justify-content: center;
   gap: var(--space-sm);
   flex-wrap: wrap;
 }
@@ -1204,10 +1205,10 @@ em {
   }
 
   .hero-actions {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .hero-actions .btn {
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
   }
 
