@@ -1,6 +1,6 @@
 {
-  "name": "My Website",
-  "short_name": "Website",
+  "name": "Insituto Sonora",
+  "short_name": "Inson",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#061bb0",
