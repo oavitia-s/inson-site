@@ -600,6 +600,33 @@ em {
   opacity: 0.75;
 }
 
+/*Fixed whatsapp btn*/
+
+.fixed-wa-btn {
+  background-color: #1fa851;
+  box-shadow: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  opacity: 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.fixed-wa-btn:hover {
+  box-shadow: 0 4px 10px #1fa851;
+}
+
+.fixed-wa-btn.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
 /* ================================================================
    SECTION 3 — THREE CARDS
 ================================================================ */
